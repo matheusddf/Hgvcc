@@ -3,9 +3,11 @@ export interface Product {
   name: string;
   description: string;
   price: number;
+  originalPrice?: number;
   image: string;
   category: string;
-  highlight?: string;
+  highlight?: boolean;
+  isAvailable: boolean;
   upsellProductId?: string;
   options?: {
     title: string;
@@ -27,11 +29,13 @@ export interface CartItem extends Product {
 }
 
 export interface StoreInfo {
+  id?: string;
   name: string;
   location: string;
   address: string;
   instagram: string;
   status: string;
+  isOpen: boolean;
   openingHours: string;
   logo: string;
   banner: string;

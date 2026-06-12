@@ -5,7 +5,8 @@ export const STORE_INFO: StoreInfo = {
   location: "Timon - MA",
   address: "Av. Jaime Rios, 170 - Parque Piauí, Timon - MA",
   instagram: "@burgerdogordo",
-  status: "Fechado",
+  status: "Aberto",
+  isOpen: true,
   openingHours: "Abrimos às 18h00",
   logo: "https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?auto=format&fit=crop&w=200&q=80",
   banner: "https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?auto=format&fit=crop&w=800&q=80",
@@ -55,7 +56,8 @@ export const PRODUCTS: Product[] = [
     price: 30.00,
     image: 'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=300&q=80',
     category: 'hamburgueres',
-    highlight: 'MAIS PEDIDO',
+    highlight: true,
+    isAvailable: true,
     upsellProductId: '4',
     options: [
       {
@@ -83,6 +85,7 @@ export const PRODUCTS: Product[] = [
     price: 18.00,
     image: 'https://images.unsplash.com/photo-1553979459-d2229ba7433b?auto=format&fit=crop&w=300&q=80',
     category: 'hamburgueres',
+    isAvailable: true,
     upsellProductId: '5'
   },
   {
@@ -92,6 +95,7 @@ export const PRODUCTS: Product[] = [
     price: 42.00,
     image: 'https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?auto=format&fit=crop&w=300&q=80',
     category: 'hamburgueres',
+    isAvailable: true,
     upsellProductId: '4'
   },
   {
@@ -100,7 +104,8 @@ export const PRODUCTS: Product[] = [
     description: 'Batatas cortadas à mão, temperadas com páprica defumada e alecrim. Acompanha molho barbecue.',
     price: 18.00,
     image: 'https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=300&q=80',
-    category: 'acompanhamentos'
+    category: 'acompanhamentos',
+    isAvailable: true
   },
   {
     id: '5',
@@ -108,7 +113,8 @@ export const PRODUCTS: Product[] = [
     description: 'Anéis de cebola empanados e super crocantes. Acompanha maionese verde.',
     price: 15.00,
     image: 'https://images.unsplash.com/photo-1639122611434-f7463469a83e?auto=format&fit=crop&w=300&q=80',
-    category: 'acompanhamentos'
+    category: 'acompanhamentos',
+    isAvailable: true
   },
   {
     id: '6',
@@ -116,7 +122,8 @@ export const PRODUCTS: Product[] = [
     description: 'Original ou Zero. 350ml bem gelada.',
     price: 6.00,
     image: 'https://images.unsplash.com/photo-1622483767028-3f66f32aef97?auto=format&fit=crop&w=300&q=80',
-    category: 'bebidas'
+    category: 'bebidas',
+    isAvailable: true
   },
   {
     id: '7',
@@ -124,7 +131,8 @@ export const PRODUCTS: Product[] = [
     description: 'Suco 100% natural, feito na hora. 400ml.',
     price: 12.00,
     image: 'https://images.unsplash.com/photo-1613478223719-2ab802602423?auto=format&fit=crop&w=300&q=80',
-    category: 'bebidas'
+    category: 'bebidas',
+    isAvailable: true
   },
   {
     id: '8',
@@ -132,6 +140,7 @@ export const PRODUCTS: Product[] = [
     description: 'Brownie de chocolate meio amargo, servido quente com uma bola de sorvete de baunilha.',
     price: 22.00,
     image: 'https://images.unsplash.com/photo-1564355808539-22fda35bed7e?auto=format&fit=crop&w=300&q=80',
-    category: 'sobremesas'
+    category: 'sobremesas',
+    isAvailable: true
   }
 ];
